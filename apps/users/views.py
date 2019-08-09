@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic.base import View
-from django.contrib.auth import authenticate, login  # 自带的权限认证函数
+from django.contrib.auth import authenticate, login, logout  # 自带的权限认证函数
 from django.http import HttpResponseRedirect    # url重定向
 from django.urls import reverse
 
@@ -9,6 +9,9 @@ from apps.users.forms import LoginForm
 
 class LoginView(View):
     def get(self, request, *args, **kwargs):
+        # 判断用户是否登录
+        if request.user.is_authenticated:
+            return HttpResponseRedirect(reverse('index'))  # 跳转url地址
         return render(request, 'login.html')
 
     def post(self, request, *args, **kwargs):
@@ -28,5 +31,12 @@ class LoginView(View):
                 })
         else:
             return render(request, 'login.html', {'login_form': login_form})
+
+
+class LogoutView(View):
+    def get(self, request, *args, **kwargs):
+        logout(request)
+        return HttpResponseRedirect(reverse('login'))
+
 
 
