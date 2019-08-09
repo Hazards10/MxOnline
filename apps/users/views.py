@@ -4,7 +4,7 @@ from django.contrib.auth import authenticate, login, logout  # 自带的权限�
 from django.http import HttpResponseRedirect    # url重定向
 from django.urls import reverse
 
-from apps.users.forms import LoginForm
+from apps.users.forms import LoginForm, DynamicLoginForm
 
 
 class LoginView(View):
@@ -12,7 +12,10 @@ class LoginView(View):
         # 判断用户是否登录
         if request.user.is_authenticated:
             return HttpResponseRedirect(reverse('index'))  # 跳转url地址
-        return render(request, 'login.html')
+        login_form = DynamicLoginForm()
+        return render(request, 'login.html', {
+            "login_form": login_form
+        })
 
     def post(self, request, *args, **kwargs):
         # django表单验证

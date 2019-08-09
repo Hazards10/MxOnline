@@ -42,8 +42,9 @@ INSTALLED_APPS = [
     'apps.operations.apps.OperationsConfig',    # 操作相关
     'apps.organizations.apps.OrganizationsConfig',   # 机构相关
     'crispy_forms',  # xadmin依赖包
-    'xadmin.apps.XAdminConfig',
-    'DjangoUeditor'
+    'xadmin.apps.XAdminConfig',  # xadmin应用
+    'DjangoUeditor',  #Ueditor富文本编辑器
+    'captcha',  # 图片验证码插件 django-captcha-simple
 ]
 
 MIDDLEWARE = [
