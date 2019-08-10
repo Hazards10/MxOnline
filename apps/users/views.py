@@ -5,11 +5,38 @@ from django.http import HttpResponseRedirect, JsonResponse    # url重定向
 from django.urls import reverse
 import redis    # redis数据库
 
-from apps.users.forms import LoginForm, DynamicLoginForm, DynamicLoginPostForm   # 登录验证from表单
+from apps.users.forms import LoginForm, DynamicLoginForm, DynamicLoginPostForm, RegisterGetForm, RegisterPostForm   # 登录验证from表单
 from apps.utils.random_str import generate_random   # 生成验证码
 from apps.utils.YunPian import send_single_sms  # 云片网发送验证码
 from MxOnline.settings import yp_apikey, REDIS_HOST, REDIS_PORT  # 引入云片网配置和redis配置
 from apps.users.models import UserProfile  # 自定义的用户表
+
+
+class RegisterView(View):
+    def get(self, request, *args, **kwargs):
+        # 返回图片验证码
+        register_get_form = RegisterGetForm()
+        return render(request, 'register.html', {'register_get_form': register_get_form})
+
+    def post(self, request, *args, **kwargs):
+        register_post_form = RegisterPostForm(request.POST)
+        if register_post_form.is_valid():
+            mobile = register_post_form.cleaned_data["mobile"]
+            password = register_post_form.cleaned_data["password"]
+            # 新建一个用户
+            user = UserProfile(username=mobile)
+            user.set_password(password)
+            user.mobile = mobile
+            user.save()
+            login(request, user)
+            return HttpResponseRedirect(reverse("index"))
+        else:
+            # 带图片验证码的Form
+            register_get_form = RegisterGetForm()
+            return render(request, "register.html", {
+                "register_get_form": register_get_form,
+                "register_post_form": register_post_form
+            })
 
 
 # 动态验证登录
@@ -20,7 +47,6 @@ class DynamicLoginView(View):
         if login_form.is_valid():
             # 没有注册账号依然可以登录
             mobile = login_form.cleaned_data["mobile"]
-            code = login_form.cleaned_data["code"]
             existed_users = UserProfile.objects.filter(mobile=mobile)
             if existed_users:
                 user = existed_users[0]
@@ -37,8 +63,7 @@ class DynamicLoginView(View):
             d_form = DynamicLoginForm()
             return render(request, 'login.html', {'login_form': login_form,
                                                   'dynamic_login': dynamic_login,
-                                                  'd_form': d_form
-                                                  })
+                                                  'd_form': d_form })
 
 
 # 验证码登录
