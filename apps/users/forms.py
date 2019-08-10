@@ -12,4 +12,5 @@ class LoginForm(forms.Form):
 
 
 class DynamicLoginForm(forms.Form):
+    mobile = forms.CharField(required=True, min_length=11, max_length=11)
     captcha = CaptchaField()

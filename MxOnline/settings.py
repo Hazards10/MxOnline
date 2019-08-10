@@ -136,3 +136,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+
+#云片网相关设置
+yp_apikey = "d6c4ddbf50ab36611d2f52041a0b949e"

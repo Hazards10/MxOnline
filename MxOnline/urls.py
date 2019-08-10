@@ -17,19 +17,21 @@ from django.contrib import admin
 from django.urls import path, include
 from django.views.generic import TemplateView
 from django.conf.urls import url, include
+from django.views.decorators.csrf import csrf_exempt    # 去除单个views函数的csrf验证
 
 import xadmin
 
-from apps.users.views import LoginView, LogoutView
+from apps.users.views import LoginView, LogoutView, SendSmsView
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
     #path('ueditor/', include('DjangoUeditor.urls')),
     path('xadmin/', xadmin.site.urls),
     path('', TemplateView.as_view(template_name="index.html"), name="index"),
-    path('login/', LoginView.as_view(), name="login"),
-    path('logout/', LogoutView.as_view(), name="logout"),
-    url(r'^captcha/', include('captcha.urls')),
+    path('login/', LoginView.as_view(), name="login"),  # 登录
+    path('logout/', LogoutView.as_view(), name="logout"),   # 退出登录
+    url(r'^captcha/', include('captcha.urls')),     # 图片验证码
+    url(r'^send_sms/', csrf_exempt(SendSmsView.as_view()), name="send_sms"),  # 发送图片验证码
     path('register/', TemplateView.as_view(template_name="register.html"), name="register"),
 
 ]
