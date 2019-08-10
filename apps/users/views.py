@@ -3,11 +3,13 @@ from django.views.generic.base import View
 from django.contrib.auth import authenticate, login, logout  # 自带的权限认证函数
 from django.http import HttpResponseRedirect, JsonResponse    # url重定向
 from django.urls import reverse
+import redis
 
 from apps.users.forms import LoginForm, DynamicLoginForm    # 登录验证from表单
 from apps.utils.random_str import generate_random   # 生成验证码
 from apps.utils.YunPian import send_single_sms  # 云片网发送验证码
-from MxOnline.settings import yp_apikey  # 引入云片网配置
+from MxOnline.settings import yp_apikey, REDIS_HOST, REDIS_PORT # 引入云片网配置和redis配置
+
 
 # 登录
 class LoginView(View):
@@ -54,14 +56,14 @@ class SendSmsView(View):
         re_dict = {}
         if send_sms_form.is_valid():
             mobile = send_sms_form.cleaned_data["mobile"]
-            #随机生成数字验证码
+            # 随机生成数字验证码
             code = generate_random(4, 0)
             re_json = send_single_sms(yp_apikey, code, mobile=mobile)
             if re_json["code"] == 0:
                 re_dict["status"] = "success"
-                # r = redis.Redis(host=REDIS_HOST, port=REDIS_PORT, db=0, charset="utf8", decode_responses=True)
-                # r.set(str(mobile), code)
-                # r.expire(str(mobile), 60*5) #设置验证码五分钟过期
+                r = redis.Redis(host=REDIS_HOST, port=REDIS_PORT, db=0, charset="utf8", decode_responses=True)
+                r.set(str(mobile), code)
+                r.expire(str(mobile), 60*5)  # 设置验证码五分钟过期
             else:
                 re_dict["msg"] = re_json["msg"]
         else:

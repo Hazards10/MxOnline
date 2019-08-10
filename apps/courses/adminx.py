@@ -10,7 +10,7 @@ from apps.courses.models import Course, Lesson, Video, CourseResource
 # xadmin全局部分属性设置类
 class GlobalSettings(object):
     site_title = "慕学后台管理系统"
-    site_footer = "暮雪在线网"
+    site_footer = "暮学在线网"
     # menu_style = "accordion" 是否收起应用里的管理标题
 
 
