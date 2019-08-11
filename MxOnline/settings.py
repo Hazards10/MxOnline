@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'xadmin.apps.XAdminConfig',  # xadmin应用
     'DjangoUeditor',  #Ueditor富文本编辑器
     'captcha',  # 图片验证码插件 django-captcha-simple
+    'pure_pagination'  # 分页插件 django-pure-pagination
 ]
 
 MIDDLEWARE = [
@@ -148,3 +149,11 @@ REDIS_PORT = 6379
 # 文件上传路径设置
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# 分页插件
+PAGINATION_SETTINGS = {
+    'PAGE_RANGE_DISPLAYED': 10,
+    'MARGIN_PAGES_DISPLAYED': 2,
+
+    'SHOW_FIRST_PAGE_WHEN_INVALID': True,
+}
