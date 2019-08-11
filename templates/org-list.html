@@ -69,11 +69,12 @@
                          <a href="org-detail-homepage.html">
                              <h1>{{ org.name}}</h1>
                              <div class="pic fl">
-
-                                     <img src="{% static 'images/authentication.png'%}"/>
-
-                                     <img src="{% static 'images/gold.png'%}"/>
-
+                                    {% if  org.is_auth %}
+                                        <img src="{% static 'images/authentication.png'%}"/>
+                                    {% endif %}
+                                    {% if  org.is_gold %}
+                                        <img src="{% static 'images/gold.png'%}"/>
+                                    {% endif %}
                              </div>
                          </a>
                     </div>
@@ -81,11 +82,14 @@
                         <li class="first"><p class="pic9">课程数：<span>{{ org.courses_nums }}</span></p><p class="c7">学习人数：<span>{{ org.students }}</span></p></li>
                         <li class="c8" style="padding-left:18px;">{{ org.address }}</li>
                         <li class="pic10" style="padding-left:18px;">经典课程：
-
-                                <a href="/diary/19/">c语言基础入门</a>
-
-                                <a href="/diary/16/">数据库基础</a>
-
+                            {#    反向取course表获取数据    #}
+                            {% if org.courses %}
+                                {% for course in org.courses %}
+                                <a href="/diary/19/">{{ course.name }}</a>
+                                {% endfor %}
+                                {% else %}
+                                无
+                            {% endif %}
                         </li>
                     </ul>
                 </dd>
