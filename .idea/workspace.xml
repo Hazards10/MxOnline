@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="316bc877-a786-4870-9227-43d937234286" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MxOnline/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MxOnline/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MxOnline/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/MxOnline/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/organizations/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/organizations/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/org-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/org-list.html" afterDir="false" />
@@ -23,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MxOnline/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+            <state relative-caret-position="241">
+              <caret line="39" column="87" selection-start-line="39" selection-start-column="87" selection-end-line="39" selection-end-column="87" />
               <folding>
                 <element signature="e#632#664#0" expanded="true" />
               </folding>
@@ -33,10 +35,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/users/views.py">
+        <entry file="file://$PROJECT_DIR$/MxOnline/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-262">
-              <caret line="95" column="53" lean-forward="true" selection-start-line="95" selection-start-column="53" selection-end-line="95" selection-end-column="53" />
+            <state relative-caret-position="241">
+              <caret line="72" column="77" selection-start-line="72" selection-start-column="77" selection-end-line="72" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apps/organizations/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -45,30 +56,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MxOnline/settings.py">
+        <entry file="file://$PROJECT_DIR$/apps/organizations/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="134" column="46" selection-start-line="134" selection-start-column="19" selection-end-line="134" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="89" column="53" lean-forward="true" selection-start-line="89" selection-start-column="53" selection-end-line="89" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/organizations/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+            <state relative-caret-position="117">
+              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#0#28#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,11 +70,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/org-list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+            <state relative-caret-position="101">
+              <caret line="82" column="69" selection-start-line="82" selection-start-column="65" selection-end-line="82" selection-end-column="69" />
               <folding>
-                <element signature="e#8948#8974#0#HTML" expanded="true" />
-                <element signature="e#9039#9065#0#HTML" expanded="true" />
+                <element signature="n#block#0;n#!!top" />
+                <element signature="e#429#784#0#HTML" />
+                <element signature="e#860#1391#0#HTML" />
               </folding>
             </state>
           </provider>
@@ -90,8 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="579" column="62" selection-start-line="579" selection-start-column="62" selection-end-line="579" selection-end-column="62" />
+            <state relative-caret-position="240">
+              <caret line="338" column="40" selection-start-line="338" selection-start-column="40" selection-end-line="338" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -105,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="174">
-              <caret line="60" column="33" lean-forward="true" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+              <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -137,11 +131,13 @@
       <find>media</find>
       <find>../media</find>
       <find>../image</find>
-      <find>.html</find>
       <find>index.html</find>
+      <find>{% url 'index' %}</find>
+      <find>.html</find>
+      <find>org-list.html</find>
       <find>defa</find>
       <find>{ % url 'index' %}</find>
-      <find>{% url 'index' %}</find>
+      <find>class=&quot;des difdes&quot;</find>
     </findStrings>
     <replaceStrings>
       <replace>{ % url 'index' % }</replace>
@@ -175,7 +171,6 @@
         <option value="$PROJECT_DIR$/extra_apps/xadmin/views/base.py" />
         <option value="$PROJECT_DIR$/apps/courses/adminx.py" />
         <option value="$PROJECT_DIR$/tools/redis_test.py" />
-        <option value="$PROJECT_DIR$/MxOnline/settings.py" />
         <option value="$PROJECT_DIR$/apps/users/forms.py" />
         <option value="$PROJECT_DIR$/templates/org-detail-teachers.html" />
         <option value="$PROJECT_DIR$/templates/org-detail-course.html" />
@@ -184,13 +179,14 @@
         <option value="$PROJECT_DIR$/templates/teacher-detail.html" />
         <option value="$PROJECT_DIR$/templates/org-detail-homepage.html" />
         <option value="$PROJECT_DIR$/apps/users/views.py" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/register.html" />
         <option value="$PROJECT_DIR$/templates/login.html" />
-        <option value="$PROJECT_DIR$/apps/organizations/views.py" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/MxOnline/urls.py" />
         <option value="$PROJECT_DIR$/templates/org-list.html" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/MxOnline/settings.py" />
+        <option value="$PROJECT_DIR$/apps/organizations/views.py" />
       </list>
     </option>
   </component>
@@ -325,12 +321,12 @@
       <workItem from="1565051779483" duration="2245000" />
       <workItem from="1565054270063" duration="3438000" />
       <workItem from="1565057788486" duration="10517000" />
-      <workItem from="1565485452159" duration="7453000" />
+      <workItem from="1565485452159" duration="10386000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53048000" />
+    <option name="totallyTimeSpent" value="55981000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -388,7 +384,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/apps/organizations/migrations/0001_initial.py" />
     <entry file="file://$PROJECT_DIR$/apps/organizations/migrations/0002_auto_20190806_0922.py" />
     <entry file="file://D:/Envs/mxonline/Lib/site-packages/django/db/models/fields/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -546,16 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/organizations/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="41" column="8" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/courses/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="71">
@@ -697,27 +682,6 @@
         <state relative-caret-position="-117" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MxOnline/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="134" column="46" selection-start-line="134" selection-start-column="19" selection-end-line="134" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2639">
-          <caret line="120" column="35" selection-start-line="120" selection-start-column="35" selection-end-line="120" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="579" column="62" selection-start-line="579" selection-start-column="62" selection-end-line="579" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Envs/mxonline/Lib/site-packages/django/views/generic/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
@@ -725,13 +689,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MxOnline/urls.py">
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-          <folding>
-            <element signature="e#632#664#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="338" column="40" selection-start-line="338" selection-start-column="40" selection-end-line="338" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -752,31 +713,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/organizations/views.py">
+    <entry file="file://D:/Envs/mxonline/Lib/site-packages/django/views/static.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        <state relative-caret-position="80">
+          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="70" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#148#164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MxOnline/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="39" column="87" selection-start-line="39" selection-start-column="87" selection-end-line="39" selection-end-column="87" />
+          <folding>
+            <element signature="e#632#664#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/organizations/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/org-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        <state relative-caret-position="101">
+          <caret line="82" column="69" selection-start-line="82" selection-start-column="65" selection-end-line="82" selection-end-column="69" />
           <folding>
-            <element signature="e#8948#8974#0#HTML" expanded="true" />
-            <element signature="e#9039#9065#0#HTML" expanded="true" />
+            <element signature="n#block#0;n#!!top" />
+            <element signature="e#429#784#0#HTML" />
+            <element signature="e#860#1391#0#HTML" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MxOnline/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="72" column="77" selection-start-line="72" selection-start-column="77" selection-end-line="72" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2639">
+          <caret line="120" column="35" selection-start-line="120" selection-start-column="35" selection-end-line="120" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
-          <caret line="60" column="33" lean-forward="true" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+          <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/organizations/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

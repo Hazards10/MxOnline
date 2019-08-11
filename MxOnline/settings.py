@@ -70,6 +70,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',  # 将media加入模板的上下文
             ],
         },
     },
@@ -143,3 +144,7 @@ yp_apikey = "d6c4ddbf50ab36611d2f52041a0b949e"
 # redis相关配置
 REDIS_HOST = "127.0.0.1"
 REDIS_PORT = 6379
+
+# 文件上传路径设置
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
